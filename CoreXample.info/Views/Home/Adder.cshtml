@@ -1,0 +1,17 @@
+﻿@model CoreXample.info.Models.CalculatorModel
+@{
+    ViewData["Title"] = "Adder";
+}
+
+<h2>Adder</h2>
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+
+<span>@Html.TextBoxFor(m => m.X) + @Html.TextBoxFor(m => m.Y) = @Model.Result</span>
+<button>Add!</button>
+}
+
+
+    
+
